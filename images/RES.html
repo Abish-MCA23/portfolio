@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)http://127.0.0.1:5500/resume%20(1).html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        #pd{
+            list-style: none;
+        }
+
+        header {
+            background-color: rgb(52, 197, 108);
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 36px;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-top: 10px;
+        }
+
+        .container {
+            margin: 20px;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .section h3 {
+            font-size: 18px;
+        }
+        
+        table,th,td{
+            border:1px solid grey;
+        }
+        th,td{
+            padding: 10px;
+        }
+        .container{
+            float:left;
+            width:55%;
+        }
+        .right{
+            margin-top: 30px;
+            float: right;
+            width:35%;
+        }
+        .skills {
+            columns: 2;
+            -webkit-columns: 2;
+            -moz-columns: 2;
+         }
+        .skills li {
+             margin-bottom: 5px;
+          }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Abish Mohamed</h1>
+        <h2>Fullstack developer</h2>
+    </header>
+
+    <div class="container">
+        <div class="section">
+            <h3><u>Contact Information</u></h3>
+            <address>
+                <p>Email: abishafi70@gmail.com</p>
+                <p>Phone: +91 6383754276</p>
+            </address>
+        </div>
+
+        <div class="section">
+            <h3><u>Objective</u></h3>
+            <p>Seeking a challenging position in a reputed organization where I can learn new skills, expand my knowledge, and leverage my learnings.</p>
+        </div>
+
+        <div class="section">
+            <h3><u>Education</u></h3>
+            <table>
+                <tbody><tr>
+                    <th>Course</th>
+                    <th>Board/University</th>
+                    <th>Institution</th>
+                    <th>Year</th>
+                    <th>Percentage</th>
+                </tr>
+                <tr>
+                    <td>BCA</td>
+                    <td>Bharathitasan University,Thiruchirappalli</td>
+                    <td>Jamal Mohamed College</td>
+                    <td>2023</td>
+                    <td>74.56%</td>
+                </tr>
+                <tr>
+                    <td>HSC</td>
+                    <td>State Board</td>
+                    <td>Muvendar Matric Hr Sec school,Peravurani</td>
+                    <td>2020</td>
+                    <td>73%</td>
+                </tr>
+                <tr>
+                    <td>SSLC</td>
+                    <td>State Board</td>
+                    <td>Muvendar Matric Hr Sec school,Peravurani</td>
+                    <td>2018</td>
+                    <td>87%</td>
+                </tr>
+            </tbody></table>
+        </div>
+    </div>
+    
+    <div class="right">
+        <div class="skill">
+            <h3><u>Technical Skils</u></h3>
+            <ul class="skills">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+            </ul>
+        </div>
+        <div id="personal">
+            <h3><u>Personal Details</u></h3>
+                <p>Date Of Birth : 15/10/2002</p>
+                <p>Gender : Male</p>
+                <p>Father Name: R.Abish Mohamed</p>
+                <p>Nationality : Indian</p>
+                <p>Language-Known : Tamil and English</p>
+                <p>Marital-Status : Single</p>
+        </div>
+       
+    <div id="dec">
+        <h3><u>Declaration</u></h3>
+        <p>I do hereby declare that the above information is true to the best of my knowledge. </p>
+    </div>
+</div>
+    
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
